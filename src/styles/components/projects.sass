@@ -1,0 +1,48 @@
+.sections-projects-container
+    height: auto
+    border-top: 3px solid #F0F0F5
+    border-bottom: 3px solid #F0F0F5
+    color: #5E3AEE
+    margin: 30px 30px 30px 30px
+
+    .projects-container
+        display: flex
+        gap: 50px
+        padding-top: 20px
+        padding-bottom: 20px
+        align-items: center
+        justify-content: center
+        flex-direction: column
+
+    .project-card-container
+        display: flex
+        flex-direction: column
+
+        a
+            display: flex
+            color: #5E3AEE
+            font-size: 100px
+
+
+    @media (min-width: 1024px)
+
+        .projects-container
+            align-items: center
+            justify-content: space-around
+            flex-direction: row
+
+        .project-card-container
+            a
+                font-size: 80px
+
+    @media (min-width: 1440px)
+        margin: 50px 100px 50px 100px
+
+        .project-card-container
+            a
+                font-size: 120px
+        
+        .projects-container
+            justify-content: space-evenly
+            height: 400px
+            flex-direction: row

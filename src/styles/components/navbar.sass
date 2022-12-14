@@ -1,0 +1,49 @@
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100px
+    padding-left: 30px
+    padding-right: 30px
+
+    .text-container
+        a
+            color: #5E3AEE
+            font-size: 24px
+            font-weight: 700
+
+    .nav-items-container
+        display: none
+
+    a
+        color: black
+        font-size: 25px
+        font-weight: 500
+
+    a:hover
+        color: #5E3AEE
+
+    @media (min-width: 1024px)
+        .nav-items-container
+            display: flex
+            gap: 20px
+        
+            a
+                font-size: 20px
+
+    @media (min-width: 1440px)
+        padding-left: 100px
+        padding-right: 100px
+
+        .nav-items-container
+            display: flex
+            gap: 20px
+
+            a
+                font-size: 25px
+
+        .text-container
+            a
+                font-size: 30px
+
+        
