@@ -6,14 +6,17 @@ const projects = [
   {
     name: 'Pokedex',
     thumbnail: MdCatchingPokemon,
+    url: 'https://vitor-pokedex.netlify.app/',
   },
   {
     name: 'Recipe App',
     thumbnail: MdOutlineFastfood,
+    url: 'https://github.com/vitoremerich/recipe-app',
   },
   {
     name: 'Portfólio',
     thumbnail: MdWeb,
+    url: 'https://github.com/vitoremerich/my-portfolio',
   },
 ];
 
@@ -24,7 +27,7 @@ export default function Projects() {
         {projects.map((project) => (
           <div key={project.name} className="project-card-container">
             <h1>{project.name}</h1>
-            <a href="url">
+            <a href={project.url}>
               <project.thumbnail />
             </a>
           </div>
